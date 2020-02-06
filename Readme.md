@@ -46,8 +46,9 @@ Starting local Kubernetes cluster...
 <p>Let’s execute json file.</p>
 <p><code>kubectl create -f https://github.com/zinky81/Zadatak1/namespace.json</code></p>
 Now let initiate Helm
-    enter code here
+
+    helm init
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTk1MzYwMjddfQ==
+eyJoaXN0b3J5IjpbMTI3OTM5Njk2MF19
 -->
