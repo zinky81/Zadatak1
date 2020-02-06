@@ -42,6 +42,7 @@ Starting local Kubernetes cluster...
 <code>default Active 1m</code></p>
 <p>Our condition is to have unique namespace, so let’s create json file ‘namespace.json’ and label it as ‘zijad’ .<br>
 <code>{ "apiVersion": "v1", "kind": "Namespace", "metadata": { "name": "zijad", "labels": { "name": "zijad" } } }</code></p>
-<p>With this we have created unique namespace for our Kubernetes cluster.</p>
+<p>With this we have created json file that we need to execute for our Kubernetes cluster.</p>
 <p>Let’s execute json file.</p>
+<p><code>kubectl create -f https://github.com/zinky81/Zadatak1/namespace.json</code></p>
 
