@@ -40,6 +40,8 @@ Starting local Kubernetes cluster...
 </code></pre>
 <p><code>Name Status Age</code><br>
 <code>default Active 1m</code></p>
-<p>Our condition is to have unique namespace, so let’s create json file ‘namespace.json’ and name it as ‘zijad’ .<br>
+<p>Our condition is to have unique namespace, so let’s create json file ‘namespace.json’ and label it as ‘zijad’ .<br>
 <code>{ "apiVersion": "v1", "kind": "Namespace", "metadata": { "name": "zijad", "labels": { "name": "zijad" } } }</code></p>
+<p>With this we have created unique namespace for our Kubernetes cluster.</p>
+<p>Let’s execute json file.</p>
 
