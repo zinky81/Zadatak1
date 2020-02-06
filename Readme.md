@@ -23,6 +23,23 @@
 <li>Kubectl<br>
 <code>curl -Lo https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/OS DISTRIBUTION/amd64/kubectl</code></li>
 </ul>
-<h2 id="switch-to-another-file">Switch to another file</h2>
-<p>All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.</p>
+<h2 id="lets-begin">Let’s begin</h2>
+<ol>
+<li>
+<p>Since we need to initiate cluster, we need to create it.</p>
+<p><code>minicube start</code></p>
+</li>
+</ol>
+<pre><code>Starting local Kubernetes cluster...
+Running pre-create checks...
+Creating machine...
+Starting local Kubernetes cluster...
+</code></pre>
+<p>First condition is to have unique namespace. Let’s see what we have by default.</p>
+<pre><code>kubectl get namespaces
+</code></pre>
+<p><code>Name Status Age</code><br>
+<code>default Active 1m</code></p>
+<p>Our condition is to have unique namespace, so let’s create json file ‘namespace.json’ and name it as ‘zijad’ .<br>
+<code>{ "apiVersion": "v1", "kind": "Namespace", "metadata": { "name": "zijad", "labels": { "name": "zijad" } } }</code></p>
 
