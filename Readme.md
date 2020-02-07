@@ -50,8 +50,9 @@ Now let initiate Helm
     helm init
 It's time to proceed with Gitlab CE installation
 
-    enter code here
+    helm install --name my-release \
+    --set externalUrl=http://your-domain.com/ stable/gitlab-ce
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTMzMjM0MTMsMTI3OTM5Njk2MF19
+eyJoaXN0b3J5IjpbODQ4ODQ2NTkzLDEyNzkzOTY5NjBdfQ==
 -->
