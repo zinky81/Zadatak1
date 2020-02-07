@@ -53,7 +53,8 @@ It's time to proceed with Gitlab CE installation
     helm install --name Gitlab-CE \
     --set externalUrl=http://your-domain.com/ stable/gitlab-ce
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTA4Mjk5OSw4NDg4NDY1OTMsMTI3OT
-M5Njk2MF19
+eyJoaXN0b3J5IjpbNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mz
+k2OTYwXX0=
 -->
