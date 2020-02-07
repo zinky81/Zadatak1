@@ -48,7 +48,10 @@ Starting local Kubernetes cluster...
 Now let initiate Helm
 
     helm init
+It's time to proceed with Gitlab CE installation
+
+    enter code here
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTM5Njk2MF19
+eyJoaXN0b3J5IjpbLTExNTMzMjM0MTMsMTI3OTM5Njk2MF19
 -->
