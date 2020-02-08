@@ -56,17 +56,10 @@ Now let proceed with an installation of required services for Gitlab-CE. Applica
 `kubectl --namespace=zijad --server=http://yourdomain:8080 create -f postgres-pod.json `
 `kubectl --namespace=zijad --server=http://yourdomain:8080 create -f postgres-service.json`
 
-It's time to proceed with Gitlab CE installation
-
-    helm install --namespace zijad --name Gitlab-CE \
-    --set externalUrl=http://your-domain.com/ stable/gitlab-ce
-
-The helm will install all required components for Gitlab-CE.
-
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDQ3MTExNSwtMTk5NzI5NDk2MSwtMT
-M4NjMyODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3
-MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMj
-c5Mzk2OTYwXX0=
+eyJoaXN0b3J5IjpbLTIwNTk4ODIzNjIsLTM1MDQ3MTExNSwtMT
+k5NzI5NDk2MSwtMTM4NjMyODk0MywxNTkyOTY3MDk5LDY5NjQ4
+NjcwMSwxOTY2NTI3MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1LD
+g0ODg0NjU5MywxMjc5Mzk2OTYwXX0=
 -->
