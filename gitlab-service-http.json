@@ -1,0 +1,25 @@
+{
+  "id": "gitlab-ce",
+  "kind": "Service",
+  "metadata": {
+    "name": "gitlab-http-service",
+    "labels": {
+      "name": "gitlab-ce"
+    }
+  },
+  "apiVersion": "v1",
+  "spec": {
+    "ports": [
+      {
+        "targetPort": "gitlab-http",
+        "port": 80,
+        "nodePort": 30080
+      }
+    ],
+    "type": "NodePort",
+    "selector": {
+      "name": "gitlab-ce"
+    }
+  }
+}
+
