@@ -63,6 +63,13 @@ We need to check are those services up & running with command:
 
 `kubectl --namespace=zijad --server=http://yourdomain:8080 get pods`
 
+We should get something like:
+
+
+`enter code here`NAME                IMAGE(S)               HOST                LABELS              STATUS
+redis               jasonbrooks/redis      10.0.0.4/           name=redis          Running
+postgresql          jasonbrooks/postgres   10.0.0.4/           name=postgresql     Running
+
 Let finally create gitlab pod with command:
 
 `kubectl --server=http://yourdomain:8080 create -f gitlab-pod.json`
@@ -76,7 +83,7 @@ Since it's required that service can be accessible outside the cluster, we need 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDIwODc4NSwtMTg5NjU1NTM4NSwtNj
+eyJoaXN0b3J5IjpbMTgzNTA5ODg2MSwtMTg5NjU1NTM4NSwtNj
 QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
 Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
 wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
