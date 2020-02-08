@@ -58,13 +58,14 @@ Now let proceed with an installation of required services for Gitlab-CE. Applica
 
 When we make sure those services are up & running with command:
 
+   `kubectl --namespace=zijad --server=http://yourdomain:8080 get pods`
 
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MzM3NTgyMiwtMzUwNDcxMTE1LC0xOT
-k3Mjk0OTYxLC0xMzg2MzI4OTQzLDE1OTI5NjcwOTksNjk2NDg2
-NzAxLDE5NjY1MjcxMDgsLTQwMjQxMDYxMiw2NzAzMjc1MjUsOD
-Q4ODQ2NTkzLDEyNzkzOTY5NjBdfQ==
+eyJoaXN0b3J5IjpbLTE4OTY1NTUzODUsLTY0MzM3NTgyMiwtMz
+UwNDcxMTE1LC0xOTk3Mjk0OTYxLC0xMzg2MzI4OTQzLDE1OTI5
+NjcwOTksNjk2NDg2NzAxLDE5NjY1MjcxMDgsLTQwMjQxMDYxMi
+w2NzAzMjc1MjUsODQ4ODQ2NTkzLDEyNzkzOTY5NjBdfQ==
 -->
