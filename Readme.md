@@ -68,9 +68,9 @@ We should get something like:
 
 `NAME                IMAGE(S)               HOST                LABELS              STATUS`
 
-`redis               jasonbrooks/redis      10.0.0.4/           name=redis          Running`
+`redis               stable/redis      10.0.0.4/           name=redis          Running`
 
-`postgresql          jasonbrooks/postgres   10.0.0.4/           name=postgresql     Running`
+`postgresql          stable/postgres   10.0.0.4/           name=postgresql     Running`
 
 Let finally create gitlab pod with command:
 
@@ -85,9 +85,9 @@ Since it's required that service can be accessible outside the cluster, we need 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTgyMjM1MCwtMTg5NjU1NTM4NSwtNj
-QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
-Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
-wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
-Njk2MF19
+eyJoaXN0b3J5IjpbNjg4NDI5NzA0LC0xODk2NTU1Mzg1LC02ND
+MzNzU4MjIsLTM1MDQ3MTExNSwtMTk5NzI5NDk2MSwtMTM4NjMy
+ODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC
+00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2
+OTYwXX0=
 -->
