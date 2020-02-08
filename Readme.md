@@ -51,7 +51,11 @@ Starting local Kubernetes cluster...
 
 Now let proceed with an installation of required services for Gitlab-CE. Application required are: redis and postgres.
 
-    
+ `kubectl --namespace zijad --server=http://yourdomain:8080 create -f redis-pod.json` 
+`kubectl --namespace zijad --server=http://yourdomain:8080 create -f redis-service.json` 
+`enter code here`kubectl --namespace zijad --server=http://yourdomain:8080 create -f postgres-pod.json 
+kubectl --namespace zijad --server=http://yourdomain:8080 create -f postgres-service.json
+
 It's time to proceed with Gitlab CE installation
 
     helm install --namespace zijad --name Gitlab-CE \
@@ -61,7 +65,7 @@ The helm will install all required components for Gitlab-CE.
 
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzE0NDQ4MjUsLTEzODYzMjg5NDMsMT
-U5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOCwtNDAyNDEw
-NjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5Njk2MF19
+eyJoaXN0b3J5IjpbLTgxNjUwMjAzNCwtMTM4NjMyODk0MywxNT
+kyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC00MDI0MTA2
+MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2OTYwXX0=
 -->
