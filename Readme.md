@@ -45,7 +45,7 @@ Starting local Kubernetes cluster...
 <p>With this we have created json file that we need to execute for our Kubernetes cluster.</p>
 <p>Let’s execute json file.</p>
 <p><code>kubectl create -f https://github.com/zinky81/Zadatak1/namespace.json</code></p>
-Now let proceed with an installation of required services for Gitlab-CE. Application required are: postgres
+Now let proceed with an installation of required services for Gitlab-CE. Application required are: redis and postgres.
 
     helm init
 It's time to proceed with Gitlab CE installation
@@ -57,7 +57,7 @@ The helm will install all required components for Gitlab-CE.
 
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQyMzY3MjMzLDY5NjQ4NjcwMSwxOTY2NT
-I3MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5Mywx
-Mjc5Mzk2OTYwXX0=
+eyJoaXN0b3J5IjpbMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2Nj
+UyNzEwOCwtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMs
+MTI3OTM5Njk2MF19
 -->
