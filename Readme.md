@@ -52,8 +52,11 @@ Starting local Kubernetes cluster...
 Now let proceed with an installation of required services for Gitlab-CE. Application required are: redis and postgres.
 
  `kubectl --namespace=zijad create -f redis-pod.json` 
+ 
 `kubectl --namespace=zijad create -f redis-service.json` 
+
 `kubectl --namespace=zijad create -f postgres-pod.json `
+
 `kubectl --namespace=zijad create -f postgres-service.json`
 
 When we make sure those services are up & running with command:
@@ -73,9 +76,9 @@ Since it's required that service can be accessible outside the cluster, we need 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwNDEyNTQ3LC0xODk2NTU1Mzg1LC02ND
-MzNzU4MjIsLTM1MDQ3MTExNSwtMTk5NzI5NDk2MSwtMTM4NjMy
-ODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC
-00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2
-OTYwXX0=
+eyJoaXN0b3J5IjpbLTEzNTQxMDI2MSwtMTg5NjU1NTM4NSwtNj
+QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
+Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
+wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
+Njk2MF19
 -->
