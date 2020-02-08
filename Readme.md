@@ -38,8 +38,11 @@ Starting local Kubernetes cluster...
 <p>First condition is to have unique namespace. Let’s see what we have by default.</p>
 <pre><code>kubectl get namespaces
 </code></pre>
-<p><code>Name Status Age</code><br>
-<code>default Active 1m</code></p>
+<p><code>NAME          STATUS    AGE</code><br>
+<code>default       Active    1d</code><br>
+<code>kube-system   Active    1d</code></p>
+   
+
 <p>Let create a unique namespace</p>
 
     kubectl create namespace zijad
@@ -58,7 +61,7 @@ The helm will install all required components for Gitlab-CE.
 
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODYzMjg5NDMsMTU5Mjk2NzA5OSw2OT
-Y0ODY3MDEsMTk2NjUyNzEwOCwtNDAyNDEwNjEyLDY3MDMyNzUy
-NSw4NDg4NDY1OTMsMTI3OTM5Njk2MF19
+eyJoaXN0b3J5IjpbMTcwNjk0MjMwNSwtMTM4NjMyODk0MywxNT
+kyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC00MDI0MTA2
+MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2OTYwXX0=
 -->
