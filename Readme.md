@@ -53,8 +53,8 @@ It's time to proceed with Gitlab CE installation
     helm install --namespace zijad --name Gitlab-CE \
     --set externalUrl=http://your-domain.com/ stable/gitlab-ce
 
-
+The helm will install all required components for Gitlab-CE to be 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjQxMDYxMiw2NzAzMjc1MjUsODQ4OD
-Q2NTkzLDEyNzkzOTY5NjBdfQ==
+eyJoaXN0b3J5IjpbMTg1MDcxOTU5MywtNDAyNDEwNjEyLDY3MD
+MyNzUyNSw4NDg4NDY1OTMsMTI3OTM5Njk2MF19
 -->
