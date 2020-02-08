@@ -66,9 +66,11 @@ We need to check are those services up & running with command:
 We should get something like:
 
 
-`NAME                IMAGE(S)               HOST                LABELS              STATUS
-redis               jasonbrooks/redis      10.0.0.4/           name=redis          Running
-postgresql          jasonbrooks/postgres   10.0.0.4/           name=postgresql     Running`
+`NAME                IMAGE(S)               HOST                LABELS              STATUS`
+
+`redis               jasonbrooks/redis      10.0.0.4/           name=redis          Running`
+
+`postgresql          jasonbrooks/postgres   10.0.0.4/           name=postgresql     Running`
 
 Let finally create gitlab pod with command:
 
@@ -83,9 +85,9 @@ Since it's required that service can be accessible outside the cluster, we need 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDE1NzY1NDIsLTE4OTY1NTUzODUsLT
-Y0MzM3NTgyMiwtMzUwNDcxMTE1LC0xOTk3Mjk0OTYxLC0xMzg2
-MzI4OTQzLDE1OTI5NjcwOTksNjk2NDg2NzAxLDE5NjY1MjcxMD
-gsLTQwMjQxMDYxMiw2NzAzMjc1MjUsODQ4ODQ2NTkzLDEyNzkz
-OTY5NjBdfQ==
+eyJoaXN0b3J5IjpbMTgwOTgyMjM1MCwtMTg5NjU1NTM4NSwtNj
+QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
+Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
+wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
+Njk2MF19
 -->
