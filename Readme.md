@@ -60,14 +60,20 @@ When we make sure those services are up & running with command:
 
    `kubectl --namespace=zijad --server=http://yourdomain:8080 get pods`
 
+Let finally create gitlab pod with command:
+
+    jkl```
+kubectl --server=http://KUBE_MASTER:8080 create -f gitlab-pod.json
+```
+
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing with expose command.
 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczNzA4NDk2LC0xODk2NTU1Mzg1LC02ND
-MzNzU4MjIsLTM1MDQ3MTExNSwtMTk5NzI5NDk2MSwtMTM4NjMy
-ODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC
-00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2
-OTYwXX0=
+eyJoaXN0b3J5IjpbMTcxOTM2NzM0MCwtMTg5NjU1NTM4NSwtNj
+QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
+Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
+wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
+Njk2MF19
 -->
