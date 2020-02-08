@@ -44,9 +44,8 @@ Starting local Kubernetes cluster...
 
     kubectl create namespace zijad
 
-<p>With this we have created namespace 'zijad' file that we need to execute for our Kubernetes cluster.</p>
-<p>Let’s execute json file.</p>
-<p><code>kubectl create -f https://github.com/zinky81/Zadatak1/namespace.json</code></p>
+<p>With this we have created namespace 'zijad'.
+
 Now let proceed with an installation of required services for Gitlab-CE. Application required are: redis and postgres.
 
     helm init
@@ -59,7 +58,7 @@ The helm will install all required components for Gitlab-CE.
 
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDQ5NDkyNiwxNTkyOTY3MDk5LDY5Nj
-Q4NjcwMSwxOTY2NTI3MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1
-LDg0ODg0NjU5MywxMjc5Mzk2OTYwXX0=
+eyJoaXN0b3J5IjpbLTEzODYzMjg5NDMsMTU5Mjk2NzA5OSw2OT
+Y0ODY3MDEsMTk2NjUyNzEwOCwtNDAyNDEwNjEyLDY3MDMyNzUy
+NSw4NDg4NDY1OTMsMTI3OTM5Njk2MF19
 -->
