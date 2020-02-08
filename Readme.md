@@ -56,10 +56,12 @@ Now let proceed with an installation of required services for Gitlab-CE. Applica
 `kubectl --namespace=zijad --server=http://yourdomain:8080 create -f postgres-pod.json `
 `kubectl --namespace=zijad --server=http://yourdomain:8080 create -f postgres-service.json`
 
-Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing or 
+Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing.
+
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTk4ODIzNjIsLTM1MDQ3MTExNSwtMT
-k5NzI5NDk2MSwtMTM4NjMyODk0MywxNTkyOTY3MDk5LDY5NjQ4
-NjcwMSwxOTY2NTI3MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1LD
-g0ODg0NjU5MywxMjc5Mzk2OTYwXX0=
+eyJoaXN0b3J5IjpbLTg2MTEwMDMzMSwtMzUwNDcxMTE1LC0xOT
+k3Mjk0OTYxLC0xMzg2MzI4OTQzLDE1OTI5NjcwOTksNjk2NDg2
+NzAxLDE5NjY1MjcxMDgsLTQwMjQxMDYxMiw2NzAzMjc1MjUsOD
+Q4ODQ2NTkzLDEyNzkzOTY5NjBdfQ==
 -->
