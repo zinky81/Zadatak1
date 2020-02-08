@@ -64,14 +64,18 @@ Let finally create gitlab pod with command:
 
 `kubectl --server=http://KUBE_MASTER:8080 create -f gitlab-pod.json`
 
+Now, we want http service enabled for gitlab.
+
+`kubectl --server=http://KUBE_MASTER:8080 create -f gitlab-service-http.json`
+
 Since it's required that service can be accessible outside the cluster, we need to use LoadBalancing with expose command.
 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODY2NzgxNywtMTg5NjU1NTM4NSwtNj
-QzMzc1ODIyLC0zNTA0NzExMTUsLTE5OTcyOTQ5NjEsLTEzODYz
-Mjg5NDMsMTU5Mjk2NzA5OSw2OTY0ODY3MDEsMTk2NjUyNzEwOC
-wtNDAyNDEwNjEyLDY3MDMyNzUyNSw4NDg4NDY1OTMsMTI3OTM5
-Njk2MF19
+eyJoaXN0b3J5IjpbLTE0NDY1NTM1NjgsLTE4OTY1NTUzODUsLT
+Y0MzM3NTgyMiwtMzUwNDcxMTE1LC0xOTk3Mjk0OTYxLC0xMzg2
+MzI4OTQzLDE1OTI5NjcwOTksNjk2NDg2NzAxLDE5NjY1MjcxMD
+gsLTQwMjQxMDYxMiw2NzAzMjc1MjUsODQ4ODQ2NTkzLDEyNzkz
+OTY5NjBdfQ==
 -->
