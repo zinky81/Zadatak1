@@ -56,14 +56,41 @@ Now let proceed with an installation of required services for Gitlab-CE. Applica
 `kubectl --namespace=zijad create -f redis-pod.json` 
  
  `kubectl --namespace=zijad create -f redis-service.json` 
-
-`kubectl --namespace=zijad create -f postgres-pod.json `
-
-`kubectl --namespace=zijad create -f postgres-service.json`
+ 
+ For Postgres we will implement Statefulset as per request.
+ 
+ Let start with configmap:
+ 
+ `kubectl --namespace=zijad create -f postgres-configmap.yaml`
+ 
+ Now, let set PersistentVolume storage:
+ 
+ `kubectl --namespace=zijad create -f postgres-storage.yaml`
+ 
+ Let set deployment:
+ 
+ `kubectl --namespace=zijad create -f postgres-deployment.yaml`
+ 
+ And finally let set postgres service:
+ 
+ `kubectl --namespace=zijad create -f postgres-service.yaml`
+ 
+ `apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+spec:
+  type: NodePort
+  ports:
+   - port: 5432`
+  `selector:
+   app: postgres`
 
 We need to check are those services up & running with command:
 
-`kubectl --namespace=zijad --server=http://yourdomain:8080 get pods`
+`kubectl --namespace=zijad get pods`
 
 We should get something like:
 
