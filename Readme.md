@@ -18,7 +18,7 @@
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before we start to solve above bullets we need to install required applications.</p>
 <ul>
-<li>Minicube<br>
+<li>Minikube<br>
 <code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-OS_DISTRIBUTION-amd64 &amp;&amp; chmod +x minikube &amp;&amp; sudo mv minikube /usr/local/bin/</code></li>
 <li>Kubectl<br>
 <code>curl -Lo https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/OS DISTRIBUTION/amd64/kubectl</code></li>
@@ -27,7 +27,7 @@
 <ol>
 <li>
 <p>Since we need to initiate cluster, we need to create it.</p>
-<p><code>minicube start</code></p>
+<p><code>minikube start</code></p>
 </li>
 </ol>
 <pre><code>Starting local Kubernetes cluster...
@@ -85,9 +85,9 @@ Since it's required that service can be accessible outside the cluster, we need 
 `kubectl expose deployment gitlab-ce --type=LoadBalancer --port=8080`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NDI5NzA0LC0xODk2NTU1Mzg1LC02ND
-MzNzU4MjIsLTM1MDQ3MTExNSwtMTk5NzI5NDk2MSwtMTM4NjMy
-ODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMSwxOTY2NTI3MTA4LC
-00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0NjU5MywxMjc5Mzk2
-OTYwXX0=
+eyJoaXN0b3J5IjpbLTE2NzMwNDkyMDgsNjg4NDI5NzA0LC0xOD
+k2NTU1Mzg1LC02NDMzNzU4MjIsLTM1MDQ3MTExNSwtMTk5NzI5
+NDk2MSwtMTM4NjMyODk0MywxNTkyOTY3MDk5LDY5NjQ4NjcwMS
+wxOTY2NTI3MTA4LC00MDI0MTA2MTIsNjcwMzI3NTI1LDg0ODg0
+NjU5MywxMjc5Mzk2OTYwXX0=
 -->
