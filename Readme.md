@@ -21,8 +21,9 @@
 <li>Minikube<br>
 <code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-OS_DISTRIBUTION-amd64 &amp;&amp; chmod +x minikube &amp;&amp; sudo mv minikube /usr/local/bin/</code></li>
 <li>Kubectl<br>
-<code>```shell
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \  && chmod +x minikube</code></li>
+<code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \  && chmod +x minikube</code></li>
+<li>Docker<br>
+<code>sudo apt-get install docker.io -y</code></li>   
 </ul>
 <h2 id="lets-begin">Let’s begin</h2>
 <ol>
