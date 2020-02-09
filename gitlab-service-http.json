@@ -16,7 +16,7 @@
         "nodePort": 30080
       }
     ],
-    "type": "NodePort",
+    "type": "LoadBalancer",
     "selector": {
       "name": "gitlab-ce"
     }
