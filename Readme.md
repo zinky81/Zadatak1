@@ -75,20 +75,9 @@ Now let proceed with an installation of required services for Gitlab-CE. Applica
  
  `kubectl --namespace=zijad create -f postgres-service.yaml`
  
- `apiVersion: v1
-kind: Service
-metadata:
-  name: postgres
-  labels:
-    app: postgres
-spec:
-  type: NodePort
-  ports:
-   - port: 5432`
-  `selector:
-   app: postgres`
+Within this file there is an type of service defined as NodeType. If we would like to have it being opened to outside of cluster we should use type LoadBalancer. For security reason let it no expose it, instead we will expose only Gitlab itself.
 
-We need to check are those services up & running with command:
+At the end we should check wheter our services are up & running with command:
 
 `kubectl --namespace=zijad get pods`
 
@@ -103,7 +92,7 @@ We should get something like:
 
 Let finally create gitlab pod with command:
 
-`kubectl --server=http://yourdomain:8080 create -f gitlab-pod.json`
+`kubectl --namespace=zijad --server=http://yourdomain:8080 create -f gitlab-pod.json`
 
 Now, we want http service enabled for gitlab.
 
